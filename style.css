@@ -18,7 +18,7 @@ body {
 }
 
 .header-content img {
-  height: 40px;
+  height: 20px;
 }
 
 
@@ -43,7 +43,21 @@ nav a:hover {
   border-top: 2px solid #0065FC;
   color: #0065FC;
 }
-    
+   
+.section-intro h1 {
+  font-size: 20px; 
+  font-weight: bold;
+  margin-bottom: 5px;
+ }
+
+.section-intro p {
+  font-size: 15px;
+  color:black;
+  margin-top: 0; 
+  margin-bottom: 30px; 
+}
+
+
   .formulaire-rechercher {
   display: flex;
   align-items: center;
@@ -88,6 +102,7 @@ nav a:hover {
   gap: 20px;
   align-items: center;
   margin-top: 20px;
+  font-size: 14px;
   }
   
   .filtres {
@@ -119,8 +134,35 @@ nav a:hover {
   
   .contenair-filtre h3 {
   margin: 0;
+  font-size: 14px; 
+  font-weight: 600;
   }
   
+  .info-logements {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.info-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#0065FC;           
+  border-radius: 50%;
+   border: 1px solid #d3d3d3;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+}
+
+  
+.info-logements p {
+  margin: 0;
+  font-size: 16px;
+}
+
   .main-contenair {
   display:grid;
   grid-template-columns: 1fr;
@@ -146,6 +188,8 @@ nav a:hover {
   
   .hébergements .section-title {
   margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 20px;
   }
   
   .hébergements-cards {
@@ -198,7 +242,8 @@ nav a:hover {
   .card-subtitle {
   margin: 0 0 10px;
   font-size: 14px;
-  color: #666;
+  color:#000;
+  font-weight: 500; 
   }
   
   .card-rating {
@@ -215,6 +260,8 @@ nav a:hover {
   display: block;    
   color:#000;
   margin-top: 40px;
+  margin-left: 15px;
+  font-size: 15px;
 }
  
 
@@ -223,7 +270,11 @@ nav a:hover {
   padding: 10px;
   border-radius: 20px;
 }
-  
+
+   .populaires .section-title {
+     font-size: 20px;
+    } 
+
   .populaires-cards {
   display: flex;
   gap: 0px;
@@ -261,13 +312,15 @@ nav a:hover {
   margin-bottom: auto;
   text-align: left;
   text-decoration: none;
+
   }
   
   .populaires .card h3 {
   margin: 0 0 5px 0;
-  font-size: 14px;
+  font-size: 16px;
   color: black;
   text-decoration: none;
+
   }
 
   
@@ -289,6 +342,11 @@ nav a:hover {
   font-size: 20px;     
 }
 
+.euro {
+  font-weight: bold;
+   color: #000; 
+}
+
   
   a {
     text-decoration: none;
@@ -300,6 +358,7 @@ nav a:hover {
   
   .activités .section-title {
     margin-bottom: 20px;
+     font-size: 20px;
   }
   
   .activités-cards {
@@ -327,15 +386,16 @@ nav a:hover {
   }
   
   .activités .card-title {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: bold;
-  padding: 10px 15px;
+  padding: 15px 15px;
   }
   
   footer {
   background-color:#F2F2F2;
   color:black ;
-  padding: 20px 0;
+  padding: 10px 0;
+  padding-bottom: 0;
   }
   
   .footer-contenair {
@@ -352,8 +412,10 @@ nav a:hover {
   }
   
   footer h2 {
-  margin-bottom: 10px;
-  font-size: 18px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  margin-top: 0px;
+  
   }
   
   footer ul {
@@ -365,9 +427,17 @@ nav a:hover {
   footer li {
   font-size: 14px;
   margin-bottom: 5px;
+  color:#000;
+  font-weight: 500; 
+   line-height: 2.4;
   }
   
-  
+  footer a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
     
   @media (max-width: 1024px) {
     body  {
@@ -396,11 +466,15 @@ nav a:hover {
     margin: 0; 
   }
 
+  .populaires-cards {
+    flex-direction: row;
+  }
+
   .activités .card img {
     height: 160px; 
   }
   .activités .card-title {
-    margin: 20^x;
+    margin: 20px;
     padding:  8px 12px 0;
     font-size: 14px;
   }
@@ -411,16 +485,14 @@ nav a:hover {
 
   .footer-contenair {
     flex-direction:row;
-    text-align: center;
-     text-align: center; 
+    text-align: center; 
    } 
  } 
 
 
 
-
-
   @media (max-width: 768px) {
+
     body  {
       background-color: yellow;
     }
@@ -430,32 +502,36 @@ nav a:hover {
   align-items: center;
   gap: 10px;
 }
-    
- .nav ul {
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
+
+  nav {
     width: 100%;
-    padding: 0;
-    margin: 0;
-  }
+  } 
 
-.nav li {
-    flex: 1;
-    text-align: center;
-    border-bottom: 2px solid #f2f2f2;
-  }
 
- .nav a {
-    display: block;
-    padding: 15px;
-     width: 100%; 
-  }
+  nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
-.nav a:hover {
+nav li {
+  width: 50%;
+  text-align: center;
+}
+
+.nav-link {
+  display: block;
+  padding: 15px;
+  position: relative;
+}
+
+ nav a:hover {
+    border-top: 2px solid transparent;
     border-bottom: 2px solid #0065FC;
-    color: #0065FC;
   }
+
+  
 .h1, p{
   text-align: center;
 }
@@ -483,21 +559,22 @@ nav a:hover {
 }
 
 .ligne-filtres {
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
 }
 
 .filtres {
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-
-    
+  display: grid;
+ grid-template-columns: 1fr 1fr;
+  gap: 80px;  
+    justify-content: center;
 }
 
 .contenair-filtre {
-  min-width: 130px;
+    text-align: center;
+  padding: 10px;
 }
 
   
@@ -560,7 +637,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   text-align: left;
-gap: 20px;
+  gap: 20px;
   padding: 20px;
       }
     }
