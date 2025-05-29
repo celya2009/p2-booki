@@ -111,7 +111,7 @@ nav a:hover {
   flex-wrap: wrap;
   }
   
-  .contenair-filtre {
+  .container-filtre {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -122,16 +122,16 @@ nav a:hover {
   cursor: default;
   }
   
-  .contenair-filtre:hover {
+  .container-filtre:hover {
   background-color: #deebff; 
   color:#000;
   }
   
-  .contenair-filtre i {
+  .container-filtre i {
   color: #0065FC;
   }
   
-  .contenair-filtre h3 {
+  .container-filtre h3 {
   margin: 0;
   font-size: 14px; 
   font-weight: 600;
@@ -162,7 +162,7 @@ nav a:hover {
   font-size: 16px;
 }
 
-  .main-contenair {
+  .main-container {
   display:grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -435,11 +435,8 @@ nav a:hover {
 }
   
   @media (max-width: 1024px) {
-    body  {
-      background-color: red;
- }
     
- .main-contenair {
+ .main-container {
     flex-direction: column;
     padding: 0 10px; 
     max-width: 92%;
@@ -479,7 +476,7 @@ nav a:hover {
     min-height: auto;
   } 
 
-  .footer-contenair {
+  .footer-container {
     flex-direction:row;
     text-align: center; 
     padding:0 5%;
@@ -489,9 +486,6 @@ nav a:hover {
 
   @media (max-width: 768px) {
 
-    body  {
-      background-color: yellow;
-    }
 
 .header-content {
   flex-direction: column;
@@ -573,12 +567,7 @@ nav li {
   padding: 15px 30px;
   width: 70%;
 }
-
-.contenair-filtre {
-  text-align: center;
-  padding: 10px;
-}
-  
+ 
   .hébergements {
     padding: 20px 15px;
     border-radius: 0;
@@ -642,7 +631,7 @@ nav li {
   margin-bottom: 20px;
 }
 
-.footer-contenair {
+.footer-container {
   display: flex;
   flex-direction: column;
   text-align: left;
