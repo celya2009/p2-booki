@@ -314,7 +314,6 @@ nav a:hover {
   font-size: 16px;
   color: black;
   text-decoration: none;
-
   }
 
   
@@ -351,7 +350,7 @@ nav a:hover {
   
   .activités .section-title {
     margin-bottom: 20px;
-     font-size: 20px;
+    font-size: 20px;
   }
   
   .activités-cards {
@@ -384,25 +383,19 @@ nav a:hover {
   padding: 15px 15px;
   }
   
-  footer {
-  background-color:#d3d3d3;
+
+   footer {
+  background-color:#F2F2F2;
   color:black ;
-  padding: 20px 0;
+  padding: 10px 0;
+  padding-bottom: 0;
   }
-  
   .footer-container {
   display: flex;
   justify-content: flex-start;
   gap: 40px;
   padding: 0 30px;
   } 
-
-  footer {
-  background-color:#F2F2F2;
-  color:black ;
-  padding: 10px 0;
-  padding-bottom: 0;
-  }
   
   footer article {
   flex: 1;
